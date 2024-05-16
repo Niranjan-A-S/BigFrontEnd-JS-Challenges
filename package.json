@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/Niranjan-A-S/BigFrontEnd-JS-Challenges",
   "author": "Niranjan A S",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
 }

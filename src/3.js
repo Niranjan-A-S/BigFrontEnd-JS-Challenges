@@ -9,7 +9,7 @@ function flat(arr, depth = 1) {
     if (!depth || depth < 1) {
         return arr
     }
-    while (depth) {
+    while (true) {
         depth--;
         return arr.reduce((acc, cur) => {
             if (!Array.isArray(cur)) {

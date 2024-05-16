@@ -1,0 +1,9 @@
+{
+  "name": "bigfrontend-js-challenges",
+  "version": "1.0.0",
+  "description": "This repo involves JS challenges and solutions",
+  "main": "index.js",
+  "repository": "https://github.com/Niranjan-A-S/BigFrontEnd-JS-Challenges",
+  "author": "Niranjan A S",
+  "license": "MIT"
+}

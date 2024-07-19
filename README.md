@@ -1,1 +1,1 @@
-This involves the coding questions in BFE JS Challenge
+This involves the coding questions and JS challenges.

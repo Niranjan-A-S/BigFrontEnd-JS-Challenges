@@ -7,19 +7,21 @@ function fetchData() {
         .then(json => console.log(json))
 }
 
-function throttle(cb, delay = 1000) {
-    let flag = true;
-    return function (args) {
-        if (flag) {
-            cb.call(this, args);
-            flag = false;
+function throttle(func, wait) {
+    let waiting = false, lastArgs = null;
+    return function (...args) {
+        if (!waiting) {
+            func.apply(this, args);
+            waiting = true;
             setTimeout(() => {
-                flag = true;
-            }, delay)
+                waiting = false;
+            }, wait);
+        } else {
+            lastArgs = args;
         }
     }
 }
 
 const throttledFetch = throttle(fetchData)
 
-btn.onclick = fetchData;
+btn.onclick = throttledFetch;
